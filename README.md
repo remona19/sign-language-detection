@@ -14,7 +14,7 @@ Testing set: 252 images
 
 
 # 4. Methodology
-# 4.1 Data Preprocessing
+4.1 Data Preprocessing
 The dataset was processed as follows:
 
 Images were loaded using the OpenCV library.
@@ -22,14 +22,14 @@ They were resized to 128x128 pixels to standardize input size.
 Converted from BGR to RGB for correct color representation.
 Labels were extracted from folder names representing each sign.
 
-# 4.2 Data Split
+4.2 Data Split
 The dataset was divided into three parts:
 
 Training set (80%): Used for model training.
 Validation set (10%): Used for hyperparameter tuning and validation.
 Test set (10%): Used for final evaluation.
 
-# 4.3 Model Architecture
+4.3 Model Architecture
 A Convolutional Neural Network (CNN) was designed with the following layers:
 
 Convolutional Layers: Extract features from images by applying filters.
@@ -38,14 +38,14 @@ Dropout Layers: Prevent overfitting by randomly setting a fraction of input unit
 Flatten Layer: Converts the 2D matrix data into a 1D vector.
 Dense (Fully Connected) Layers: Classifies the features into different categories.
 
-# 4.4 Training the Model
+4.4 Training the Model
 The model was compiled using the following configurations:
 
-# Loss function: 
+Loss function: 
 Categorical cross-entropy (for multi-class classification).
-# Optimizer: 
+Optimizer: 
 Adam optimizer, which adapts the learning rate during training.
-# Metrics: 
+Metrics: 
 Accuracy was used as the primary metric to evaluate the model's performance.
 
 The training process involved splitting the dataset and running the model over multiple epochs to optimize weights and reduce loss.
