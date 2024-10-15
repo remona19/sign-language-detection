@@ -52,17 +52,23 @@ The training process involved splitting the dataset and running the model over m
 
 # 5. Results
 After training the model, the following performance metrics were computed:
+Overall Accuracy: The model has an overall accuracy of 93%, meaning it correctly classified 93% of the total instances (252 samples).
 
-Training Accuracy: The accuracy of the model on the training set.
-Validation Accuracy: The accuracy on the validation set was monitored to ensure the model was not overfitting.
-Test Accuracy: Final evaluation on the test set to measure the model's generalization.
-Confusion Matrix
-A confusion matrix was generated to visualize the performance of the model on different classes, highlighting any misclassifications.
-Classification Report
-A detailed classification report was generated, which included:
-Precision: How many of the predicted labels were correct.
-Recall: How many of the actual labels were correctly predicted.
-F1-Score: The harmonic mean of precision and recall.
+Macro Average:
+* Precision: 0.93
+* Recall: 0.92
+* F1-Score: 0.92
+The macro average gives an unweighted average across all classes, treating each class equally.
+
+Weighted Average:
+
+* Precision: 0.94
+* Recall: 0.93
+* F1-Score: 0.93
+The weighted average takes into account the support (number of instances) of each class, so classes with more instances have more influence on the final score.
+
+![image](https://github.com/user-attachments/assets/207811c2-c82b-4633-a7be-c3d24feb0151)
+
 
 # 6. Conclusion
 This project successfully developed a CNN-based model for recognizing American Sign Language hand gestures. The model achieved significant accuracy on the test set, indicating its potential for real-world applications. Future improvements could include expanding the dataset, using data augmentation, and developing a real-time detection system.
